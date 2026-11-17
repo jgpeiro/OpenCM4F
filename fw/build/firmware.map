@@ -1,0 +1,819 @@
+     VMA      LMA     Size Align Out     In      Symbol
+       0        0       60     4 .vectors
+       0        0       60     4         build/crt0.o:(.vectors)
+       0        0       60     1                 __vectors
+      60       60     79ec     4 .text
+      60       60        c     2         build/crt0.o:(.text.Default_Handler)
+      60       60        0     1                 $t.0
+      61       61        c     1                 Default_Handler
+      61       61        c     1                 NMI_Handler
+      61       61        c     1                 SVC_Handler
+      61       61        c     1                 PendSV_Handler
+      61       61        c     1                 SysTick_Handler
+      6c       6c       70     4         build/crt0.o:(.text.Reset_Handler)
+      6c       6c        0     1                 $t.1
+      6d       6d       50     1                 Reset_Handler
+      bc       bc        0     1                 $d.3
+      dc       dc       16     2         build/crt0.o:(.text.Fault_Handler)
+      dc       dc        0     1                 $t.2
+      dd       dd       16     1                 Fault_Handler
+      f4       f4       24     4         build/main.o:(.text.main)
+      f4       f4        0     1                 $t.0
+      f5       f5       24     1                 main
+     114      114        0     1                 $d.1
+     118      118       10     2         build/ui.o:(.text.clampi)
+     118      118        0     1                 $t.1
+     119      119       10     1                 clampi
+     128      128       28     4         build/ui.o:(.text.show_toast)
+     128      128        0     1                 $t.2
+     129      129       28     1                 show_toast
+     148      148        0     1                 $d.3
+     150      150       44     4         build/ui.o:(.text.reg)
+     150      150        0     1                 $t.4
+     151      151       44     1                 reg
+     190      190        0     1                 $d.5
+     194      194       4a     2         build/ui.o:(.text.card)
+     194      194        0     1                 $t.6
+     195      195       4a     1                 card
+     1de      1de       1a     2         build/ui.o:(.text.title)
+     1de      1de        0     1                 $t.7
+     1df      1df       1a     1                 title
+     1f8      1f8       e0     4         build/ui.o:(.text.button)
+     1f8      1f8        0     1                 $t.8
+     1f9      1f9       e0     1                 button
+     2d4      2d4        0     1                 $d.9
+     2d8      2d8       7c     2         build/ui.o:(.text.hbar)
+     2d8      2d8        0     1                 $t.10
+     2d9      2d9       7c     1                 hbar
+     354      354       dc     4         build/ui.o:(.text.donut)
+     354      354        0     1                 $t.11
+     355      355       dc     1                 donut
+     42c      42c        0     1                 $d.12
+     430      430       80     4         build/ui.o:(.text.fmt_sig)
+     430      430        0     1                 $t.13
+     431      431       80     1                 fmt_sig
+     4ac      4ac        0     1                 $d.14
+     4b0      4b0       28     4         build/ui.o:(.text.cls_vals)
+     4b0      4b0        0     1                 $t.15
+     4b1      4b1       28     1                 cls_vals
+     4d4      4d4        0     1                 $d.16
+     4d8      4d8       28     4         build/ui.o:(.text.ui_init)
+     4d8      4d8        0     1                 $t.17
+     4d9      4d9       28     1                 ui_init
+     4fc      4fc        0     1                 $d.18
+     500      500      7ac     4         build/ui.o:(.text.ui_frame)
+     500      500        0     1                 $t.19
+     501      501      7ac     1                 ui_frame
+     72c      72c        0     1                 $d.20
+     738      738        0     1                 $t.21
+     ad8      ad8        0     1                 $d.22
+     ae0      ae0        0     1                 $t.23
+     c3c      c3c        0     1                 $d.24
+     cac      cac       48     4         build/ui.o:(.text.ui_isr_frame)
+     cac      cac        0     1                 $t.25
+     cad      cad       48     1                 ui_isr_frame
+     cec      cec        0     1                 $d.26
+     cf4      cf4       cc     4         build/ui.o:(.text.ui_loop)
+     cf4      cf4        0     1                 $t.27
+     cf5      cf5       cc     1                 ui_loop
+     da4      da4        0     1                 $d.28
+     dc0      dc0       ac     4         build/ui.o:(.text.fault_report)
+     dc0      dc0        0     1                 $t.29
+     dc1      dc1       ac     1                 fault_report
+     e48      e48        0     1                 $d.30
+     e6c      e6c       32     2         build/ui.o:(.text.hex8)
+     e6c      e6c        0     1                 $t.31
+     e6d      e6d       32     1                 hex8
+     ea0      ea0       4c     4         build/ui.o:(.text.act)
+     ea0      ea0        0     1                 $t.32
+     ea1      ea1       4c     1                 act
+     ee0      ee0        0     1                 $d.33
+     eec      eec       14     2         build/ui.o:(.text.OUTLINED_FUNCTION_0)
+     eec      eec        0     1                 $t.34
+     eed      eed       14     1                 OUTLINED_FUNCTION_0
+     f00      f00       10     2         build/ui.o:(.text.OUTLINED_FUNCTION_1)
+     f00      f00        0     1                 $t.35
+     f01      f01       10     1                 OUTLINED_FUNCTION_1
+     f10      f10        e     2         build/ui.o:(.text.OUTLINED_FUNCTION_2)
+     f10      f10        0     1                 $t.36
+     f11      f11        e     1                 OUTLINED_FUNCTION_2
+     f1e      f1e        a     2         build/ui.o:(.text.OUTLINED_FUNCTION_3)
+     f1e      f1e        0     1                 $t.37
+     f1f      f1f        a     1                 OUTLINED_FUNCTION_3
+     f28      f28       40     4         build/pages.o:(.text.act_bench)
+     f28      f28        0     1                 $t.0
+     f29      f29       40     1                 act_bench
+     f5c      f5c        0     1                 $d.1
+     f68      f68        c     4         build/pages.o:(.text.busy_toast)
+     f68      f68        0     1                 $t.2
+     f69      f69        c     1                 busy_toast
+     f70      f70        0     1                 $d.3
+     f74      f74      8f8     4         build/pages.o:(.text.pg_bench)
+     f74      f74        0     1                 $t.4
+     f75      f75      8f8     1                 pg_bench
+    12e4     12e4        0     1                 $d.5
+    12f0     12f0        0     1                 $t.6
+    169c     169c        0     1                 $d.7
+    16a0     16a0        0     1                 $t.8
+    17b4     17b4        0     1                 $d.9
+    186c     186c       ae     2         build/pages.o:(.text.wrap)
+    186c     186c        0     1                 $t.10
+    186d     186d       ae     1                 wrap
+    191c     191c       14     4         build/pages.o:(.text.act_scores)
+    191c     191c        0     1                 $t.11
+    191d     191d       14     1                 act_scores
+    192c     192c        0     1                 $d.12
+    1930     1930      280     4         build/pages.o:(.text.pg_scores)
+    1930     1930        0     1                 $t.13
+    1931     1931      280     1                 pg_scores
+    1b7c     1b7c        0     1                 $d.14
+    1bb0     1bb0        2     2         build/pages.o:(.text.act_cycles)
+    1bb0     1bb0        0     1                 $t.15
+    1bb1     1bb1        2     1                 act_cycles
+    1bb4     1bb4      238     4         build/pages.o:(.text.pg_cycles)
+    1bb4     1bb4        0     1                 $t.16
+    1bb5     1bb5      238     1                 pg_cycles
+    1dc8     1dc8        0     1                 $d.17
+    1dec     1dec       20     4         build/pages.o:(.text.act_isa)
+    1dec     1dec        0     1                 $t.18
+    1ded     1ded       20     1                 act_isa
+    1e04     1e04        0     1                 $d.19
+    1e0c     1e0c      29c     4         build/pages.o:(.text.pg_isa)
+    1e0c     1e0c        0     1                 $t.20
+    1e0d     1e0d      29c     1                 pg_isa
+    2074     2074        0     1                 $d.21
+    20a8     20a8        2     2         build/pages.o:(.text.act_cpu)
+    20a8     20a8        0     1                 $t.22
+    20a9     20a9        2     1                 act_cpu
+    20ac     20ac      568     4         build/pages.o:(.text.pg_cpu)
+    20ac     20ac        0     1                 $t.23
+    20ad     20ad      568     1                 pg_cpu
+    23b0     23b0        0     1                 $d.24
+    23b8     23b8        0     1                 $t.25
+    2568     2568        0     1                 $d.26
+    2614     2614       60     2         build/pages.o:(.text.unit)
+    2614     2614        0     1                 $t.27
+    2615     2615       60     1                 unit
+    2674     2674       24     2         build/pages.o:(.text.OUTLINED_FUNCTION_0)
+    2674     2674        0     1                 $t.28
+    2675     2675       24     1                 OUTLINED_FUNCTION_0
+    2698     2698        c     2         build/pages.o:(.text.OUTLINED_FUNCTION_1)
+    2698     2698        0     1                 $t.29
+    2699     2699        c     1                 OUTLINED_FUNCTION_1
+    26a4     26a4       22     2         build/pages.o:(.text.OUTLINED_FUNCTION_2)
+    26a4     26a4        0     1                 $t.30
+    26a5     26a5       22     1                 OUTLINED_FUNCTION_2
+    26c6     26c6        e     2         build/pages.o:(.text.OUTLINED_FUNCTION_3)
+    26c6     26c6        0     1                 $t.31
+    26c7     26c7        e     1                 OUTLINED_FUNCTION_3
+    26d4     26d4        8     2         build/pages.o:(.text.OUTLINED_FUNCTION_4)
+    26d4     26d4        0     1                 $t.32
+    26d5     26d5        8     1                 OUTLINED_FUNCTION_4
+    26dc     26dc        8     2         build/pages.o:(.text.OUTLINED_FUNCTION_5)
+    26dc     26dc        0     1                 $t.33
+    26dd     26dd        8     1                 OUTLINED_FUNCTION_5
+    26e4     26e4        a     2         build/pages.o:(.text.OUTLINED_FUNCTION_6)
+    26e4     26e4        0     1                 $t.34
+    26e5     26e5        a     1                 OUTLINED_FUNCTION_6
+    26ee     26ee        8     2         build/pages.o:(.text.OUTLINED_FUNCTION_7)
+    26ee     26ee        0     1                 $t.35
+    26ef     26ef        8     1                 OUTLINED_FUNCTION_7
+    26f6     26f6        e     2         build/pages.o:(.text.OUTLINED_FUNCTION_8)
+    26f6     26f6        0     1                 $t.36
+    26f7     26f7        e     1                 OUTLINED_FUNCTION_8
+    2704     2704        6     2         build/pages.o:(.text.OUTLINED_FUNCTION_9)
+    2704     2704        0     1                 $t.37
+    2705     2705        6     1                 OUTLINED_FUNCTION_9
+    270a     270a        c     2         build/pages.o:(.text.OUTLINED_FUNCTION_10)
+    270a     270a        0     1                 $t.38
+    270b     270b        c     1                 OUTLINED_FUNCTION_10
+    2716     2716       10     2         build/pages.o:(.text.OUTLINED_FUNCTION_11)
+    2716     2716        0     1                 $t.39
+    2717     2717       10     1                 OUTLINED_FUNCTION_11
+    2726     2726        a     2         build/pages.o:(.text.OUTLINED_FUNCTION_12)
+    2726     2726        0     1                 $t.40
+    2727     2727        a     1                 OUTLINED_FUNCTION_12
+    2730     2730        e     2         build/pages.o:(.text.OUTLINED_FUNCTION_13)
+    2730     2730        0     1                 $t.41
+    2731     2731        e     1                 OUTLINED_FUNCTION_13
+    273e     273e        a     2         build/pages.o:(.text.OUTLINED_FUNCTION_14)
+    273e     273e        0     1                 $t.42
+    273f     273f        a     1                 OUTLINED_FUNCTION_14
+    2748     2748        e     2         build/pages.o:(.text.OUTLINED_FUNCTION_15)
+    2748     2748        0     1                 $t.43
+    2749     2749        e     1                 OUTLINED_FUNCTION_15
+    2758     2758       20     4         build/gfx.o:(.text.isin)
+    2758     2758        0     1                 $t.0
+    2759     2759       20     1                 isin
+    2770     2770        0     1                 $d.1
+    2778     2778       34     4         build/gfx.o:(.text.g_begin)
+    2778     2778        0     1                 $t.4
+    2779     2779       34     1                 g_begin
+    27a0     27a0        0     1                 $d.5
+    27ac     27ac       1c     4         build/gfx.o:(.text.g_end)
+    27ac     27ac        0     1                 $t.8
+    27ad     27ad       1c     1                 g_end
+    27c4     27c4        0     1                 $d.9
+    27c8     27c8       90     4         build/gfx.o:(.text.g_shape2)
+    27c8     27c8        0     1                 $t.10
+    27c9     27c9       90     1                 g_shape2
+    2854     2854        0     1                 $d.11
+    2858     2858       b8     4         build/gfx.o:(.text.box)
+    2858     2858        0     1                 $t.12
+    2859     2859       b8     1                 box
+    2908     2908        0     1                 $d.13
+    2910     2910       24     2         build/gfx.o:(.text.g_rect)
+    2910     2910        0     1                 $t.14
+    2911     2911       24     1                 g_rect
+    2934     2934      148     4         build/gfx.o:(.text.g_outline2)
+    2934     2934        0     1                 $t.15
+    2935     2935      148     1                 g_outline2
+    2a70     2a70        0     1                 $d.16
+    2a7c     2a7c       2c     2         build/gfx.o:(.text.g_frame)
+    2a7c     2a7c        0     1                 $t.17
+    2a7d     2a7d       2c     1                 g_frame
+    2aa8     2aa8       18     2         build/gfx.o:(.text.g_circle2)
+    2aa8     2aa8        0     1                 $t.18
+    2aa9     2aa9       18     1                 g_circle2
+    2ac0     2ac0      208     4         build/gfx.o:(.text.g_arc2)
+    2ac0     2ac0        0     1                 $t.19
+    2ac1     2ac1      208     1                 g_arc2
+    2cb8     2cb8        0     1                 $d.20
+    2cc8     2cc8       28     4         build/gfx.o:(.text.g_char_w)
+    2cc8     2cc8        0     1                 $t.21
+    2cc9     2cc9       28     1                 g_char_w
+    2cec     2cec        0     1                 $d.22
+    2cf0     2cf0       2c     4         build/gfx.o:(.text.glyph)
+    2cf0     2cf0        0     1                 $t.23
+    2cf1     2cf1       2c     1                 glyph
+    2d18     2d18        0     1                 $d.24
+    2d1c     2d1c       3c     4         build/gfx.o:(.text.g_text_w)
+    2d1c     2d1c        0     1                 $t.25
+    2d1d     2d1d       3c     1                 g_text_w
+    2d54     2d54        0     1                 $d.26
+    2d58     2d58      114     4         build/gfx.o:(.text.g_text)
+    2d58     2d58        0     1                 $t.27
+    2d59     2d59      114     1                 g_text
+    2e64     2e64        0     1                 $d.28
+    2e6c     2e6c       3a     2         build/gfx.o:(.text.g_icon)
+    2e6c     2e6c        0     1                 $t.29
+    2e6d     2e6d       3a     1                 g_icon
+    2ea8     2ea8       30     4         build/gfx.o:(.text.g_words)
+    2ea8     2ea8        0     1                 $t.32
+    2ea9     2ea9       30     1                 g_words
+    2ed4     2ed4        0     1                 $d.33
+    2ed8     2ed8       40     2         build/gfx.o:(.text.g_span_at)
+    2ed8     2ed8        0     1                 $t.34
+    2ed9     2ed9       40     1                 g_span_at
+    2f18     2f18       54     2         build/gfx.o:(.text.fmt_int)
+    2f18     2f18        0     1                 $t.36
+    2f19     2f19       54     1                 fmt_int
+    2f6c     2f6c       72     2         build/gfx.o:(.text.fmt_fix)
+    2f6c     2f6c        0     1                 $t.37
+    2f6d     2f6d       72     1                 fmt_fix
+    2fde     2fde       12     2         build/gfx.o:(.text.str_cat)
+    2fde     2fde        0     1                 $t.39
+    2fdf     2fdf       12     1                 str_cat
+    2ff0     2ff0       18     2         build/gfx.o:(.text.OUTLINED_FUNCTION_0)
+    2ff0     2ff0        0     1                 $t.40
+    2ff1     2ff1       18     1                 OUTLINED_FUNCTION_0
+    3008     3008       10     2         build/gfx.o:(.text.OUTLINED_FUNCTION_1)
+    3008     3008        0     1                 $t.41
+    3009     3009       10     1                 OUTLINED_FUNCTION_1
+    3018     3018        c     2         build/gfx.o:(.text.OUTLINED_FUNCTION_2)
+    3018     3018        0     1                 $t.42
+    3019     3019        c     1                 OUTLINED_FUNCTION_2
+    3024     3024        e     2         build/gfx.o:(.text.OUTLINED_FUNCTION_3)
+    3024     3024        0     1                 $t.43
+    3025     3025        e     1                 OUTLINED_FUNCTION_3
+    3032     3032       12     2         build/gfx.o:(.text.OUTLINED_FUNCTION_4)
+    3032     3032        0     1                 $t.44
+    3033     3033       12     1                 OUTLINED_FUNCTION_4
+    3044     3044        4     2         build/bench.o:(.text.dhry_run_u)
+    3044     3044        0     1                 $t.0
+    3045     3045        4     1                 dhry_run_u
+    3048     3048       34     4         build/bench.o:(.text.t_begin)
+    3048     3048        0     1                 $t.1
+    3049     3049       34     1                 t_begin
+    3078     3078        0     1                 $d.2
+    307c     307c       20     4         build/bench.o:(.text.pf_read)
+    307c     307c        0     1                 $t.3
+    307d     307d       20     1                 pf_read
+    3098     3098        0     1                 $d.4
+    309c     309c       48     4         build/bench.o:(.text.t_end)
+    309c     309c        0     1                 $t.5
+    309d     309d       48     1                 t_end
+    30e0     30e0        0     1                 $d.6
+    30e4     30e4       34     4         build/bench.o:(.text.bench_elapsed)
+    30e4     30e4        0     1                 $t.7
+    30e5     30e5       34     1                 bench_elapsed
+    3110     3110        0     1                 $d.8
+    3118     3118       1c     4         build/bench.o:(.text.IRQ0_Handler)
+    3118     3118        0     1                 $t.9
+    3119     3119       18     1                 IRQ0_Handler
+    3130     3130        0     1                 $d.16
+    3134     3134       1c     4         build/bench.o:(.text.bench_init)
+    3134     3134        0     1                 $t.10
+    3135     3135       1c     1                 bench_init
+    3144     3144        0     1                 $d.11
+    3150     3150      1c4     4         build/bench.o:(.text.bench_run)
+    3150     3150        0     1                 $t.12
+    3151     3151      1c4     1                 bench_run
+    32f8     32f8        0     1                 $d.13
+    3314     3314       78     4         build/bench.o:(.text.measure)
+    3314     3314        0     1                 $t.14
+    3315     3315       78     1                 measure
+    3384     3384        0     1                 $d.15
+    338c     338c        2     4         build/bm_kernels.o:(.text.whet_init)
+    338c     338c        0     1                 $t.0
+    338d     338d        2     1                 whet_init
+    3390     3390      42c     4         build/bm_kernels.o:(.text.whet_run)
+    3390     3390        0     1                 $t.1
+    3391     3391      42c     1                 whet_run
+    3718     3718        0     1                 $d.2
+    371c     371c        0     1                 $t.3
+    3788     3788        0     1                 $d.4
+    37bc     37bc       bc     4         build/bm_kernels.o:(.text.fft_init)
+    37bc     37bc        0     1                 $t.5
+    37bd     37bd       bc     1                 fft_init
+    3868     3868        0     1                 $d.6
+    3878     3878      2a4     4         build/bm_kernels.o:(.text.fft_run)
+    3878     3878        0     1                 $t.7
+    3879     3879      2a4     1                 fft_run
+    3b08     3b08        0     1                 $d.8
+    3b1c     3b1c       de     4         build/bm_kernels.o:(.text.mm_init)
+    3b1c     3b1c        0     1                 $t.9
+    3b1d     3b1d       de     1                 mm_init
+    3bfc     3bfc      170     4         build/bm_kernels.o:(.text.mm_run)
+    3bfc     3bfc        0     1                 $t.10
+    3bfd     3bfd      170     1                 mm_run
+    3d68     3d68        0     1                 $d.11
+    3d6c     3d6c       68     4         build/bm_kernels.o:(.text.fir_init)
+    3d6c     3d6c        0     1                 $t.12
+    3d6d     3d6d       68     1                 fir_init
+    3dd4     3dd4       e2     4         build/bm_kernels.o:(.text.fir_run)
+    3dd4     3dd4        0     1                 $t.13
+    3dd5     3dd5       e2     1                 fir_run
+    3eb8     3eb8       36     4         build/bm_kernels.o:(.text.sha_init)
+    3eb8     3eb8        0     1                 $t.14
+    3eb9     3eb9       36     1                 sha_init
+    3ef0     3ef0      14c     4         build/bm_kernels.o:(.text.sha_run)
+    3ef0     3ef0        0     1                 $t.15
+    3ef1     3ef1      14c     1                 sha_run
+    403c     403c       6e     4         build/bm_kernels.o:(.text.crc_init)
+    403c     403c        0     1                 $t.16
+    403d     403d       6e     1                 crc_init
+    40ac     40ac       ac     4         build/bm_kernels.o:(.text.crc_run)
+    40ac     40ac        0     1                 $t.17
+    40ad     40ad       ac     1                 crc_run
+    4158     4158       8a     4         build/bm_kernels.o:(.text.wPA)
+    4158     4158        0     1                 $t.18
+    4159     4159       8a     1                 wPA
+    41e4     41e4       36     4         build/bm_kernels.o:(.text.wP3)
+    41e4     41e4        0     1                 $t.19
+    41e5     41e5       36     1                 wP3
+    421c     421c       48     4         build/bm_kernels.o:(.text.wP0)
+    421c     421c        0     1                 $t.20
+    421d     421d       48     1                 wP0
+    4264     4264      160     4         build/bm_kernels.o:(.text.sha_block)
+    4264     4264        0     1                 $t.21
+    4265     4265      160     1                 sha_block
+    43c4     43c4      274     4         build/bm_isa.o:(.text.isa_run)
+    43c4     43c4        0     1                 $t.0
+    43c5     43c5      274     1                 isa_run
+    45be     45be        0     1                 $d.1
+    45c6     45c6        0     1                 $t.2
+    4630     4630        0     1                 $d.3
+    4638     4638       32     4         build/bm_isa.o:(.text.dot_mla)
+    4638     4638        0     1                 $t.4
+    4639     4639       32     1                 dot_mla
+    466c     466c       24     4         build/bm_isa.o:(.text.dot_smlad)
+    466c     466c        0     1                 $t.5
+    466d     466d       24     1                 dot_smlad
+    4690     4690       38     4         build/bm_isa.o:(.text.div_soft)
+    4690     4690        0     1                 $t.6
+    4691     4691       38     1                 div_soft
+    46c8     46c8       2c     4         build/bm_isa.o:(.text.div_hw)
+    46c8     46c8        0     1                 $t.7
+    46c9     46c9       2c     1                 div_hw
+    46f4     46f4       3e     4         build/bm_isa.o:(.text.fmac_soft)
+    46f4     46f4        0     1                 $t.8
+    46f5     46f5       3e     1                 fmac_soft
+    4734     4734       38     4         build/bm_isa.o:(.text.fmac_hw)
+    4734     4734        0     1                 $t.9
+    4735     4735       38     1                 fmac_hw
+    4768     4768        0     1                 $d.10
+    476c     476c       5e     4         build/bm_isa.o:(.text.bit_soft)
+    476c     476c        0     1                 $t.11
+    476d     476d       5e     1                 bit_soft
+    47cc     47cc       2c     4         build/bm_isa.o:(.text.bit_hw)
+    47cc     47cc        0     1                 $t.12
+    47cd     47cd       2c     1                 bit_hw
+    47f8     47f8       36     4         build/bm_isa.o:(.text.udiv_soft)
+    47f8     47f8        0     1                 $t.13
+    47f9     47f9       36     1                 udiv_soft
+    4830     4830      106     4         build/bm_isa.o:(.text.f_add)
+    4830     4830        0     1                 $t.14
+    4831     4831      106     1                 f_add
+    4938     4938       9a     4         build/bm_isa.o:(.text.f_mul)
+    4938     4938        0     1                 $t.15
+    4939     4939       9a     1                 f_mul
+    49d2     49d2        6     2         build/mathf.o:(.text.fabsf)
+    49d2     49d2        0     1                 $t.0
+    49d3     49d3        6     1                 fabsf
+    49d8     49d8        6     2         build/mathf.o:(.text.sqrtf)
+    49d8     49d8        0     1                 $t.1
+    49d9     49d9        6     1                 sqrtf
+    49e0     49e0       8c     4         build/mathf.o:(.text.sinf)
+    49e0     49e0        0     1                 $t.2
+    49e1     49e1       8c     1                 sinf
+    4a54     4a54        0     1                 $d.3
+    4a6c     4a6c       4c     4         build/mathf.o:(.text.reduce)
+    4a6c     4a6c        0     1                 $t.4
+    4a6d     4a6d       4c     1                 reduce
+    4aa8     4aa8        0     1                 $d.5
+    4ab8     4ab8       8c     4         build/mathf.o:(.text.cosf)
+    4ab8     4ab8        0     1                 $t.6
+    4ab9     4ab9       8c     1                 cosf
+    4b2c     4b2c        0     1                 $d.7
+    4b44     4b44       ec     4         build/mathf.o:(.text.atanf)
+    4b44     4b44        0     1                 $t.8
+    4b45     4b45       ec     1                 atanf
+    4c10     4c10        0     1                 $d.9
+    4c30     4c30       ec     4         build/mathf.o:(.text.expf)
+    4c30     4c30        0     1                 $t.12
+    4c31     4c31       ec     1                 expf
+    4cec     4cec        0     1                 $d.13
+    4d1c     4d1c       f8     4         build/mathf.o:(.text.logf)
+    4d1c     4d1c        0     1                 $t.14
+    4d1d     4d1d       f8     1                 logf
+    4df0     4df0        0     1                 $d.15
+    4e14     4e14       12     2         build/mathf.o:(.text.OUTLINED_FUNCTION_0)
+    4e14     4e14        0     1                 $t.16
+    4e15     4e15       12     1                 OUTLINED_FUNCTION_0
+    4e26     4e26        a     2         build/mathf.o:(.text.OUTLINED_FUNCTION_1)
+    4e26     4e26        0     1                 $t.17
+    4e27     4e27        a     1                 OUTLINED_FUNCTION_1
+    4e30     4e30        a     2         build/mathf.o:(.text.OUTLINED_FUNCTION_2)
+    4e30     4e30        0     1                 $t.18
+    4e31     4e31        a     1                 OUTLINED_FUNCTION_2
+    4e3a     4e3a       16     2         build/mathf.o:(.text.OUTLINED_FUNCTION_3)
+    4e3a     4e3a        0     1                 $t.19
+    4e3b     4e3b       16     1                 OUTLINED_FUNCTION_3
+    4e50     4e50        e     2         build/mathf.o:(.text.OUTLINED_FUNCTION_4)
+    4e50     4e50        0     1                 $t.20
+    4e51     4e51        e     1                 OUTLINED_FUNCTION_4
+    4e5e     4e5e       34     2         build/minilib.o:(.text.memcpy)
+    4e5e     4e5e        0     1                 $t.0
+    4e5f     4e5f       34     1                 memcpy
+    4e92     4e92       14     2         build/minilib.o:(.text.strcmp)
+    4e92     4e92        0     1                 $t.5
+    4e93     4e93       14     1                 strcmp
+    4ea6     4ea6        e     2         build/minilib.o:(.text.strcpy)
+    4ea6     4ea6        0     1                 $t.6
+    4ea7     4ea7        e     1                 strcpy
+    4eb4     4eb4        4     2         build/minilib.o:(.text.__aeabi_memcpy)
+    4eb4     4eb4        0     1                 $t.7
+    4eb5     4eb5        4     1                 __aeabi_memcpy
+    4eb8     4eb8       60     4         build/dhry/dhry_main.o:(.text.dhry_init)
+    4eb8     4eb8        0     1                 $t.0
+    4eb9     4eb9       60     1                 dhry_init
+    4f18     4f18      242     4         build/dhry/dhry_main.o:(.text.dhry_run)
+    4f18     4f18        0     1                 $t.1
+    4f19     4f19      242     1                 dhry_run
+    515c     515c       8e     4         build/dhry/dhry_main.o:(.text.Proc_1)
+    515c     515c        0     1                 $t.2
+    515d     515d       8e     1                 Proc_1
+    51ec     51ec       24     4         build/dhry/dhry_main.o:(.text.Proc_2)
+    51ec     51ec        0     1                 $t.3
+    51ed     51ed       24     1                 Proc_2
+    5210     5210       2a     4         build/dhry/dhry_main.o:(.text.Proc_3)
+    5210     5210        0     1                 $t.4
+    5211     5211       2a     1                 Proc_3
+    523c     523c       2c     4         build/dhry/dhry_main.o:(.text.Proc_4)
+    523c     523c        0     1                 $t.5
+    523d     523d       2c     1                 Proc_4
+    5268     5268       1a     4         build/dhry/dhry_main.o:(.text.Proc_5)
+    5268     5268        0     1                 $t.6
+    5269     5269       1a     1                 Proc_5
+    5284     5284       44     4         build/dhry/dhrystone.o:(.text.Proc_6)
+    5284     5284        0     1                 $t.0
+    5285     5285       44     1                 Proc_6
+    52a4     52a4        0     1                 $d.1
+    52aa     52aa        0     1                 $t.2
+    52c8     52c8        8     4         build/dhry/dhrystone.o:(.text.Proc_7)
+    52c8     52c8        0     1                 $t.3
+    52c9     52c9        8     1                 Proc_7
+    52d0     52d0       60     4         build/dhry/dhrystone.o:(.text.Proc_8)
+    52d0     52d0        0     1                 $t.4
+    52d1     52d1       60     1                 Proc_8
+    5330     5330       18     4         build/dhry/dhrystone.o:(.text.Func_1)
+    5330     5330        0     1                 $t.5
+    5331     5331       18     1                 Func_1
+    5348     5348       34     4         build/dhry/dhrystone.o:(.text.Func_2)
+    5348     5348        0     1                 $t.6
+    5349     5349       34     1                 Func_2
+    537c     537c        a     4         build/dhry/dhrystone.o:(.text.Func_3)
+    537c     537c        0     1                 $t.7
+    537d     537d        a     1                 Func_3
+    5388     5388       92     4         build/coremark/core_list_join.o:(.text.calc_func)
+    5388     5388        0     1                 $t.0
+    5389     5389       92     1                 calc_func
+    541c     541c      368     4         build/coremark/core_list_join.o:(.text.core_bench_list)
+    541c     541c        0     1                 $t.4
+    541d     541d      368     1                 core_bench_list
+    5784     5784      1cc     4         build/coremark/core_list_join.o:(.text.core_list_init)
+    5784     5784        0     1                 $t.10
+    5785     5785      1cc     1                 core_list_init
+    5950     5950      578     4         build/coremark/cm_main.o:(.text.coremark_main)
+    5950     5950        0     1                 $t.1
+    5951     5951      578     1                 coremark_main
+    5ec8     5ec8       30     4         build/coremark/core_matrix.o:(.text.core_bench_matrix)
+    5ec8     5ec8        0     1                 $t.0
+    5ec9     5ec9       30     1                 core_bench_matrix
+    5ef8     5ef8      2b4     4         build/coremark/core_matrix.o:(.text.matrix_test)
+    5ef8     5ef8        0     1                 $t.1
+    5ef9     5ef9      2b4     1                 matrix_test
+    61ac     61ac       ec     4         build/coremark/core_matrix.o:(.text.core_init_matrix)
+    61ac     61ac        0     1                 $t.8
+    61ad     61ad       ec     1                 core_init_matrix
+    6298     6298       ec     4         build/coremark/core_state.o:(.text.core_bench_state)
+    6298     6298        0     1                 $t.0
+    6299     6299       ec     1                 core_bench_state
+    6384     6384      13c     4         build/coremark/core_state.o:(.text.core_state_transition)
+    6384     6384        0     1                 $t.1
+    6385     6385      13c     1                 core_state_transition
+    63dc     63dc        0     1                 $d.2
+    63e4     63e4        0     1                 $t.3
+    64c0     64c0       9c     4         build/coremark/core_state.o:(.text.core_init_state)
+    64c0     64c0        0     1                 $t.4
+    64c1     64c1       9c     1                 core_init_state
+    655c     655c       1a     4         build/coremark/core_util.o:(.text.get_seed_32)
+    655c     655c        0     1                 $t.0
+    655d     655d       1a     1                 get_seed_32
+    6578     6578       50     4         build/coremark/core_util.o:(.text.crcu16)
+    6578     6578        0     1                 $t.2
+    6579     6579       50     1                 crcu16
+    65c8     65c8       94     4         build/coremark/core_util.o:(.text.crcu32)
+    65c8     65c8        0     1                 $t.3
+    65c9     65c9       94     1                 crcu32
+    665c     665c       50     4         build/coremark/core_util.o:(.text.crc16)
+    665c     665c        0     1                 $t.4
+    665d     665d       50     1                 crc16
+    66ac     66ac        4     4         build/coremark/core_util.o:(.text.check_data_types)
+    66ac     66ac        0     1                 $t.5
+    66ad     66ad        4     1                 check_data_types
+    66b0     66b0        4     2         build/coremark/core_portme.o:(.text.start_time)
+    66b0     66b0        0     1                 $t.0
+    66b1     66b1        4     1                 start_time
+    66b4     66b4       1c     4         build/coremark/core_portme.o:(.text.stop_time)
+    66b4     66b4        0     1                 $t.1
+    66b5     66b5       1c     1                 stop_time
+    66c8     66c8        0     1                 $d.2
+    66d0     66d0        c     4         build/coremark/core_portme.o:(.text.get_time)
+    66d0     66d0        0     1                 $t.3
+    66d1     66d1        c     1                 get_time
+    66d8     66d8        0     1                 $d.4
+    66dc     66dc       10     4         build/coremark/core_portme.o:(.text.time_in_secs)
+    66dc     66dc        0     1                 $t.5
+    66dd     66dd       10     1                 time_in_secs
+    66e8     66e8        0     1                 $d.6
+    66ec     66ec        6     2         build/coremark/core_portme.o:(.text.portable_init)
+    66ec     66ec        0     1                 $t.7
+    66ed     66ed        6     1                 portable_init
+    66f2     66f2        6     2         build/coremark/core_portme.o:(.text.portable_fini)
+    66f2     66f2        0     1                 $t.8
+    66f3     66f3        6     1                 portable_fini
+    66f8     66f8       d0     2         build/coremark/core_portme.o:(.text.ee_printf)
+    66f8     66f8        0     1                 $t.9
+    66f9     66f9       d0     1                 ee_printf
+    67c8     67c8       24     4         build/coremark/core_portme.o:(.text.lput)
+    67c8     67c8        0     1                 $t.10
+    67c9     67c9       24     1                 lput
+    67e4     67e4        0     1                 $d.11
+    67ec     67ec       70     2         build/coremark/core_portme.o:(.text.lnum)
+    67ec     67ec        0     1                 $t.12
+    67ed     67ed       70     1                 lnum
+    685c     685c        2     2         build/coremark/core_portme.o:(.text.coremark_init)
+    685c     685c        0     1                 $t.13
+    685d     685d        2     1                 coremark_init
+    6860     6860       5c     4         build/coremark/core_portme.o:(.text.coremark_run)
+    6860     6860        0     1                 $t.14
+    6861     6861       5c     1                 coremark_run
+    68a0     68a0        0     1                 $d.15
+    68bc     68bc       44     4         build/coremark/core_portme.o:(.text.has)
+    68bc     68bc        0     1                 $t.16
+    68bd     68bd       44     1                 has
+    68fc     68fc        0     1                 $d.17
+    6900     6900        a     2         build/coremark/core_portme.o:(.text.OUTLINED_FUNCTION_0)
+    6900     6900        0     1                 $t.18
+    6901     6901        a     1                 OUTLINED_FUNCTION_0
+    690a     690a      c1a     1         <internal>:(.rodata.str1.1)
+    7524     7524       64     4         build/ui.o:(.rodata.PAGES)
+    7524     7524       64     1                 PAGES
+    7588     7588        6     1         build/ui.o:(.rodata.CLS_IDX)
+    7588     7588        6     1                 CLS_IDX
+    758e     758e        c     2         build/ui.o:(.rodata.CLS_COL)
+    758e     758e        c     1                 CLS_COL
+    759c     759c       18     4         build/pages.o:(.rodata.CLS_SHORT)
+    759c     759c       18     1                 CLS_SHORT
+    75b4     75b4        c     4         build/pages.o:(.rodata.pg_cpu.ST)
+    75b4     75b4        c     1                 pg_cpu.ST
+    75c0     75c0       18     4         build/pages.o:(.rodata.pg_cpu.EU)
+    75c0     75c0       18     1                 pg_cpu.EU
+    75d8     75d8       80     1         build/gfx.o:(.rodata.font_w)
+    75d8     75d8       80     1                 font_w
+    7658     7658       80     1         build/gfx.o:(.rodata.large_map)
+    7658     7658       80     1                 large_map
+    76d8     76d8      120     4         build/bench.o:(.rodata.BENCH)
+    76d8     76d8      120     1                 BENCH
+    77f8     77f8       80     4         <internal>:(.rodata.cst32)
+    7878     7878      100     4         build/bm_kernels.o:(.rodata.SHA_K)
+    7878     7878      100     1                 SHA_K
+    7978     7978       40     4         build/bm_isa.o:(.rodata.FEAT)
+    7978     7978       40     1                 FEAT
+    79b8     79b8        a     2         build/coremark/cm_main.o:(.rodata.list_known_crc)
+    79b8     79b8        a     1                 list_known_crc
+    79c2     79c2        a     2         build/coremark/cm_main.o:(.rodata.matrix_known_crc)
+    79c2     79c2        a     1                 matrix_known_crc
+    79cc     79cc        a     2         build/coremark/cm_main.o:(.rodata.state_known_crc)
+    79cc     79cc        a     1                 state_known_crc
+    79d8     79d8       10     4         build/coremark/core_state.o:(.rodata.intpat)
+    79d8     79d8       10     1                 intpat
+    79e8     79e8       10     4         build/coremark/core_state.o:(.rodata.floatpat)
+    79e8     79e8       10     1                 floatpat
+    79f8     79f8       10     4         build/coremark/core_state.o:(.rodata.scipat)
+    79f8     79f8       10     1                 scipat
+    7a08     7a08       10     4         build/coremark/core_state.o:(.rodata.errpat)
+    7a08     7a08       10     1                 errpat
+    7a18     7a18       20     4         build/coremark/core_state.o:(.rodata..Lswitch.table.core_init_state)
+    7a18     7a18       20     1                 .Lswitch.table.core_init_state
+    7a38     7a38       14     4         build/coremark/core_util.o:(.rodata..Lswitch.table.get_seed_32)
+    7a38     7a38       14     1                 .Lswitch.table.get_seed_32
+    7a4c     7a4c        0     1         . = ALIGN ( 4 )
+    7a4c     7a4c       10     4 .ARM.exidx
+    7a4c     7a4c       10     4         <internal>:(.ARM.exidx)
+20000000     7a5c       38     4 .data
+20000000     7a5c        0     1         __data_start = .
+20000000     7a5c        4     4         build/ui.o:(.data.run_req)
+20000000     7a5c        4     1                 run_req
+20000004     7a60        c     4         build/ui.o:(.data..L_MergedGlobals)
+20000004     7a60        4     1                 fade
+20000008     7a64        4     1                 enc_last
+2000000c     7a68        4     1                 tab_y2
+20000010     7a6c        4     4         build/pages.o:(.data.per_mhz)
+20000010     7a6c        4     1                 per_mhz
+20000014     7a70        c     4         build/gfx.o:(.data..L_MergedGlobals)
+20000014     7a70        4     1                 g_opa
+20000018     7a74        4     1                 clip_y1
+2000001c     7a78        4     1                 clip_x1
+20000020     7a7c        8     4         build/bench.o:(.data..L_MergedGlobals)
+20000020     7a7c        4     1                 bench_cur
+20000024     7a80        4     1                 clk_hz
+20000028     7a84        4     4         build/bm_isa.o:(.data.rs)
+20000028     7a84        4     1                 rs
+2000002c     7a88        4     4         build/coremark/core_portme.o:(.data.seed3_volatile)
+2000002c     7a88        4     1                 seed3_volatile
+20000030     7a8c        4     4         build/coremark/core_portme.o:(.data.seed4_volatile)
+20000030     7a8c        4     1                 seed4_volatile
+20000034     7a90        4     4         build/coremark/core_portme.o:(.data.default_num_contexts)
+20000034     7a90        4     1                 default_num_contexts
+20000038     7a94        0     1         . = ALIGN ( 4 )
+20000038     7a94        0     1         __data_end = .
+20000038     7a94        0     1 __data_load = LOADADDR ( .data )
+20000038 20000038     4efc     8 .bss
+20000038 20000038        0     1         __bss_start = .
+20000038 20000038      7d0     1         build/coremark/cm_main.o:(.bss.static_memblk)
+20000038 20000038      7d0     1                 static_memblk
+20000808 20000808       30     1         build/ui.o:(.bss.toast)
+20000808 20000808       30     1                 toast
+20000838 20000838      100     2         build/ui.o:(.bss.load_hist)
+20000838 20000838      100     1                 load_hist
+20000938 20000938       78     4         build/ui.o:(.bss..L_MergedGlobals.31)
+20000938 20000938        1     1                 ring_set
+2000093c 2000093c        1     1                 s1_long
+20000940 20000940        1     1                 s2_long
+20000944 20000944        1     1                 enc_sw_long
+20000948 20000948        4     1                 toast_t
+2000094c 2000094c        4     1                 fi
+20000950 20000950        4     1                 ring_r
+20000954 20000954        4     1                 T
+20000958 20000958        4     1                 page
+2000095c 2000095c        4     1                 enc_edit
+20000960 20000960        4     1                 load_n
+20000964 20000964        4     1                 isr_sel_frame
+20000968 20000968        4     1                 isr_last
+2000096c 2000096c        4     1                 cur_bank
+20000970 20000970        4     1                 run_all
+20000974 20000974        4     1                 s1_cnt
+20000978 20000978        4     1                 s1_prev
+2000097c 2000097c        4     1                 s2_cnt
+20000980 20000980        4     1                 s2_prev
+20000984 20000984        4     1                 enc_sw_cnt
+20000988 20000988        4     1                 enc_sw_prev
+2000098c 2000098c        4     1                 enc_acc
+20000990 20000990       10     1                 ring_t
+200009a0 200009a0       10     1                 ring
+200009b0 200009b0        4     4         build/pages.o:(.bss.last_sel)
+200009b0 200009b0        4     1                 last_sel
+200009b4 200009b4        4     4         build/pages.o:(.bss.prio_bits)
+200009b4 200009b4        4     1                 prio_bits
+200009b8 200009b8       18     4         build/gfx.o:(.bss..L_MergedGlobals.1)
+200009b8 200009b8        4     1                 dl
+200009bc 200009bc        4     1                 gd
+200009c0 200009c0        4     1                 ncmd
+200009c4 200009c4        4     1                 gbyte
+200009c8 200009c8        4     1                 clip_y0
+200009cc 200009cc        4     1                 clip_x0
+200009d0 200009d0      1a0     4         build/bench.o:(.bss.RES)
+200009d0 200009d0      1a0     1                 RES
+20000b70 20000b70       58     4         build/bench.o:(.bss..L_MergedGlobals.22)
+20000b70 20000b70        4     1                 t_start_sum
+20000b74 20000b74        4     1                 timing
+20000b78 20000b78        4     1                 t_last
+20000b7c 20000b7c        4     1                 bench_phase
+20000b80 20000b80        4     1                 bench_expect
+20000b84 20000b84        4     1                 bench_quick
+20000b88 20000b88       20     1                 t0
+20000ba8 20000ba8       20     1                 acc
+20000bc8 20000bc8        4     4         build/bm_kernels.o:(.bss.w_x7)
+20000bc8 20000bc8        4     1                 w_x7
+20000bcc 20000bcc        4     4         build/bm_kernels.o:(.bss.w_y7)
+20000bcc 20000bcc        4     1                 w_y7
+20000bd0 20000bd0        4     4         build/bm_kernels.o:(.bss.w_z8)
+20000bd0 20000bd0        4     1                 w_z8
+20000bd4 20000bd4        4     4         build/bm_kernels.o:(.bss.w_x11)
+20000bd4 20000bd4        4     1                 w_x11
+20000bd8 20000bd8        4     4         build/bm_kernels.o:(.bss.w_e2)
+20000bd8 20000bd8        4     1                 w_e2
+20000bdc 20000bdc        1     4         build/bm_kernels.o:(.bss.wJ)
+20000bdc 20000bdc        1     1                 wJ
+20000be0 20000be0        1     4         build/bm_kernels.o:(.bss.wK)
+20000be0 20000be0        1     1                 wK
+20000be4 20000be4        1     4         build/bm_kernels.o:(.bss.wL)
+20000be4 20000be4        1     1                 wL
+20000be8 20000be8       20     4         build/bm_kernels.o:(.bss.sha_h)
+20000be8 20000be8       20     1                 sha_h
+20000c08 20000c08     1800     4         build/bm_kernels.o:(.bss.scratch)
+20000c08 20000c08     1800     1                 scratch
+20002408 20002408        4     4         build/bm_kernels.o:(.bss.wT)
+20002408 20002408        4     1                 wT
+2000240c 2000240c        4     4         build/bm_kernels.o:(.bss.wT2)
+2000240c 2000240c        4     1                 wT2
+20002410 20002410       14     4         build/bm_kernels.o:(.bss.wE1)
+20002410 20002410       14     1                 wE1
+20002424 20002424       20     4         build/bm_isa.o:(.bss.feat_cpe)
+20002424 20002424       20     1                 feat_cpe
+20002444 20002444        4     1         build/bm_isa.o:(.bss.feat_ok)
+20002444 20002444        4     1                 feat_ok
+20002448 20002448        4     4         build/bm_isa.o:(.bss.feat_done)
+20002448 20002448        4     1                 feat_done
+2000244c 2000244c       30     4         build/dhry/dhry_main.o:(.bss.Next_Glob_Rec)
+2000244c 2000244c       30     1                 Next_Glob_Rec
+2000247c 2000247c        4     4         build/dhry/dhry_main.o:(.bss.Next_Ptr_Glob)
+2000247c 2000247c        4     1                 Next_Ptr_Glob
+20002480 20002480       30     4         build/dhry/dhry_main.o:(.bss.Glob_Rec)
+20002480 20002480       30     1                 Glob_Rec
+200024b0 200024b0        4     4         build/dhry/dhry_main.o:(.bss.Ptr_Glob)
+200024b0 200024b0        4     1                 Ptr_Glob
+200024b4 200024b4     2710     4         build/dhry/dhry_main.o:(.bss.Arr_2_Glob)
+200024b4 200024b4     2710     1                 Arr_2_Glob
+20004bc4 20004bc4        4     4         build/dhry/dhry_main.o:(.bss.Runs_Done)
+20004bc4 20004bc4        4     1                 Runs_Done
+20004bc8 20004bc8        4     4         build/dhry/dhry_main.o:(.bss.Bool_Glob)
+20004bc8 20004bc8        4     1                 Bool_Glob
+20004bcc 20004bcc       c8     4         build/dhry/dhry_main.o:(.bss.Arr_1_Glob)
+20004bcc 20004bcc       c8     1                 Arr_1_Glob
+20004c94 20004c94        1     1         build/dhry/dhry_main.o:(.bss.Ch_2_Glob)
+20004c94 20004c94        1     1                 Ch_2_Glob
+20004c98 20004c98        4     4         build/dhry/dhry_main.o:(.bss.Int_Glob)
+20004c98 20004c98        4     1                 Int_Glob
+20004c9c 20004c9c        1     1         build/dhry/dhry_main.o:(.bss.Ch_1_Glob)
+20004c9c 20004c9c        1     1                 Ch_1_Glob
+20004ca0 20004ca0        4     4         build/coremark/core_portme.o:(.bss.seed1_volatile)
+20004ca0 20004ca0        4     1                 seed1_volatile
+20004ca4 20004ca4        4     4         build/coremark/core_portme.o:(.bss.seed2_volatile)
+20004ca4 20004ca4        4     1                 seed2_volatile
+20004ca8 20004ca8        4     4         build/coremark/core_portme.o:(.bss.seed5_volatile)
+20004ca8 20004ca8        4     1                 seed5_volatile
+20004cac 20004cac        4     4         build/coremark/core_portme.o:(.bss.ticks)
+20004cac 20004cac        4     1                 ticks
+20004cb0 20004cb0        4     4         build/coremark/core_portme.o:(.bss.cm_n)
+20004cb0 20004cb0        4     1                 cm_n
+20004cb4 20004cb4      280     1         build/coremark/core_portme.o:(.bss.cm_log)
+20004cb4 20004cb4      280     1                 cm_log
+20004f34 20004f34        0     1         . = ALIGN ( 4 )
+20004f34 20004f34        0     1         __bss_end = .
+20004f34 20004f34        0     1 __stack_top = ORIGIN ( RAM ) + LENGTH ( RAM )
+20004f34 20004f34        0     1 __stack_size = __stack_top - __bss_end
+20004f34 20004f34        0     1 
+       0        0       42     1 .comment
+       0        0       42     1         <internal>:(.comment)
+       0        0       49     1 .ARM.attributes
+       0        0       49     1         build/crt0.o:(.ARM.attributes)
+       0        0     23c0     4 .symtab
+       0        0     23c0     4         <internal>:(.symtab)
+       0        0       59     1 .shstrtab
+       0        0       59     1         <internal>:(.shstrtab)
+       0        0     120e     1 .strtab
+       0        0     120e     1         <internal>:(.strtab)
